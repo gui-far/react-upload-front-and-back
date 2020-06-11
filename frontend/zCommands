@@ -1,0 +1,26 @@
+1
+npm i styled-components
+Lib that allow create styled component as an alternative to "Pure" CSS
+
+2
+npm i react-dropzone
+"Drag and drop" files lib
+
+3
+npm i react-circular-progressbar
+
+4
+npm i react-icons
+
+5
+npm i lodash
+Many tools
+One of them is the uniqueId function
+
+6
+npm i filesize
+Gets the file size plus 'kb', 'mb'...
+
+7
+npm i axios
+HTTP requets

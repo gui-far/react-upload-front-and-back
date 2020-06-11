@@ -1,0 +1,17 @@
+#MYSQL#
+
+#docker exec -it "container" /bin/sh#
+#mysql -p#
+#root#
+#use knowledge_final#
+FROM mysql:5.7 as databasemysql
+EXPOSE 3306
+ENV MYSQL_DATABASE=knowledge_final \
+    MYSQL_ROOT_PASSWORD=root
+COPY ./vistolog_dump.sql /docker-entrypoint-initdb.d/
+
+#MONGODB
+FROM alpine:3.9 as databasemongo
+EXPOSE 27017
+WORKDIR /data/db
+RUN apk add mongodb
